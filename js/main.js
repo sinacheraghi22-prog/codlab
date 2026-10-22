@@ -3,7 +3,7 @@ const mainNav = document.querySelector('.main-nav')
 
 if (menuToggle && mainNav){
     menuToggle.addEventListener('click', () => {
-        mainNav.classList.toggle('.open');
+        mainNav.classList.toggle('open');
         menuToggle.classList.toggle('active');
     });
 }
