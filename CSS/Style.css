@@ -1023,7 +1023,7 @@ textarea.form-input{
 
 @media (max-width: 900px) {
   
-  
+ 
   .btn-cta {
     display: none;
   }
@@ -1033,7 +1033,7 @@ textarea.form-input{
     display: flex;
   }
 
-
+  
   .main-nav {
     display: none; 
     flex-direction: column;
@@ -1045,19 +1045,23 @@ textarea.form-input{
     padding: 2rem 1.5rem;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     z-index: 9999;
-  }
-
- 
-  .main-nav.open {
-    display: flex; 
+    width: 100%;
   }
 
   
+  .main-nav.open {
+    display: flex !important; 
+  }
+
+
   .main-nav ul {
+    display: flex;
     flex-direction: column;
     gap: 1.5rem;
     align-items: center;
     width: 100%;
+    padding: 0;
+    margin: 0;
   }
 
   .main-nav a {
@@ -1066,6 +1070,7 @@ textarea.form-input{
     display: block;
     width: 100%;
     text-align: center;
+    color: var(--color-dark);
   }
 
   
