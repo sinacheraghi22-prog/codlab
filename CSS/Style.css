@@ -1021,20 +1021,21 @@ textarea.form-input{
 
 
 
-@media (max-width: 900px){
+@media (max-width: 900px) {
+  
   
   .btn-cta {
     display: none;
   }
 
- 
+  
   .menu-toggle {
     display: flex;
   }
 
-  
+
   .main-nav {
-    display: flex; 
+    display: none; 
     flex-direction: column;
     position: fixed;
     top: var(--header-height); 
@@ -1044,24 +1045,14 @@ textarea.form-input{
     padding: 2rem 1.5rem;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     z-index: 9999;
-    
-   
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transform: translateY(-10px);
-    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
-  }
-
-  
-  .main-nav.open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-    transform: translateY(0);
   }
 
  
+  .main-nav.open {
+    display: flex; 
+  }
+
+  
   .main-nav ul {
     flex-direction: column;
     gap: 1.5rem;
@@ -1089,7 +1080,4 @@ textarea.form-input{
   }
 }
   
-  .menu-toggle.active span:nth-child(1){ transform: translateY(8px) rotate(45deg); }
-  .menu-toggle.active span:nth-child(2){ opacity: 0; }
-  .menu-toggle.active span:nth-child(3){ transform: translateY(-8px) rotate(-45deg); }
-}
+
