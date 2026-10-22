@@ -1,11 +1,12 @@
 const menuToggle = document.querySelector('.menu-toggle');
 const mainNav = document.querySelector('.main-nav')
 
-menuToggle.addEventListener('click', () => {
-    mainNav.classList.toggle('.open');
-    menuToggle.classList.toggle('active');
-});
-
+if (menuToggle && mainNav){
+    menuToggle.addEventListener('click', () => {
+        mainNav.classList.toggle('.open');
+        menuToggle.classList.toggle('active');
+    });
+}
 const contactForm = document.getElementById('contactForm');
 const formMessage = document.getElementById('formMessage');
 
